@@ -24,7 +24,7 @@ def display_remaining_attempts(remaining):
     print(f"{Fore.CYAN}남은 기회: {remaining}{Style.RESET_ALL}")
     print(hangman_pics[6 - remaining])
 
-def display_game_over(word, success):
+def display_game_result(word, success):
     if success:
         print(f"{Fore.GREEN}축하합니다! 단어를 맞추셨습니다: {word}{Style.RESET_ALL}")
     else:
